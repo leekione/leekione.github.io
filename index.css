@@ -4,9 +4,10 @@
     src: url('./outputs/BMHANNAPro.ttf')format('truetype');
 }
 
-body {
+body, p {
     margin: 0px;
     padding: 0px;
+    font-family: "baemin";
 }
 
 ul, li {
@@ -49,12 +50,10 @@ main {
     position: fixed;
     width: 100%;
     z-index: 100;
-    font-family: 'baemin';
+
 }
 
-footer {
-    height: 1600px;
-}
+
 
 #header > .header_ul {
     display: flex;
@@ -92,7 +91,7 @@ footer {
 }
 
 #main_content > #h_comment {
-    font-family: 'baemin';
+
     font-size: 25px;
     margin-top: 30px;
     margin-bottom: 20px;
@@ -100,14 +99,14 @@ footer {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 700px;
     width: 100%;
     z-index: 1;
     position:relative;
 }
 
 #main_content > #h_comment::after {
-    height: 500px;
+    height: 100%;
     width: 100%;
     content: " ";
     background : url("./outputs/img_bg.jpg");
@@ -125,20 +124,44 @@ footer {
     flex-direction: column;
     align-items: center;
     scroll-margin-top: 70px;
-    height: 800px;
+    height: 700px;
+    width: 100%;
     z-index: 1;
+
 }
 
-#main_content > #about > div {
-    font-family: 'baemin';
+#main_content > #about > .aboutTitle {
+
     font-size: 50px;
     font-weight: bold;
     margin-top:30px;
 }
 
-#main_content > #about > span {
+#main_content > #about > .aboutMe {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 26px;
+    margin-top:30px;
+}
+
+#main_content > #about > .aboutMe > .myImage {
+    margin-right: 20px;
+}
+
+#main_content > #about > .aboutMe > .ulLeft {
+    width: 150px;
+}
+
+#main_content > #about > .aboutMe > .ulLeft > li,
+#main_content > #about > .aboutMe > .ulRight > li {
+    padding: 10px;
+}
+
+#main_content > #about > .aboutSubTitle {
     padding-top: 30px;
-    font-family: 'baemin';
     font-size:25px;
 }
 
@@ -147,12 +170,97 @@ footer {
     flex-direction: column;
     align-items: center;
     scroll-margin-top: 70px;
+    font-size:24px;
+    margin: 50px 0;
 }
 
 #main_content > #main_project > #project_title {
-    font-family: 'baemin';
     font-size: 50px;
     margin-bottom: 20px;
+}
+#main_content > #main_project > .project_introduce {
+    display: flex;
+    width: 780px;
+    font-size:24px;
+    margin: 20px 0;
+}
+#main_content > #main_project > .project_introduce > .introduce_title {
+    width: 200px;
+}
+#main_content > #main_project > .project_introduce > .introduce_content {
+    width: 700px;
+}
+
+#main_content > #main_project > #projectBtn {
+    display: flex;
+    justify-content: space-between;
+    width: 500px;
+    margin: 50px 0 20px 0;
+
+}
+
+#main_content > #main_project > #projectBtn > .btn {
+    padding: 5px;
+    outline: 2px solid gray;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+#main_content > #main_project > #projectImgContent > .project_img{
+    display: none;
+}
+
+#main_content > #main_skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    scroll-margin-top: 70px;
+    font-size: 50px;
+    margin: 50px 0;
+}
+
+#main_content > #main_skill > #main_title {
+    margin-bottom: 40px;
+}
+
+#main_content > #main_skill > .skills {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 24px;
+    width: 1020px;
+}
+
+#main_content > #main_skill > .skills > .my_skill > .skill_content {
+    width: 400px;
+}
+
+#main_content > #main_skill > .skills > .usedTool {
+    width: 300px;
+}
+
+
+#main_content > #main_skill > .skills > .my_skill > .skill_content >  .skillImg,
+#main_content > #main_skill > .skills > .usedTool > .toolImg {
+    height: 90px;
+    width: 90px;
+    margin: 15px;
+}
+
+footer {
+    font-family: sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    height: 180px;
+}
+
+footer > div {
+    margin: 5px;
 }
 
 .main_ul{
@@ -171,3 +279,12 @@ footer {
     padding: 10px;
     border-left: solid 1px #909090;
 }
+
+.line {
+   background-color: black;
+   width: 80%;
+   height: 2px;
+   border:none;
+
+}
+
